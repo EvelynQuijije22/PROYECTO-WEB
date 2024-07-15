@@ -1,0 +1,79 @@
+
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+#logo {
+  width: 15%;
+  height: auto;
+}
+
+#navbar_buttons {
+  display: flex;
+}
+
+
+#nav-links a:hover {
+  background-color: #3cff00;
+  color: #ffffff;
+}
+
+
+#signup-container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#h2 {
+  font-size: 30px;
+}
+
+#signup-form {
+  text-align: left;
+}
+
+#signup-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#signup {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#contrasena {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#signup-form button {
+  background-color: #165374;
+  color: #fff;
+  border: none;
+  padding: 10px 173px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#signup-form button:hover {
+  background-color:#165374;
+}
+
+span {
+  font-size: 12px;
+}

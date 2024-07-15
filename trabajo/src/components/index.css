@@ -1,0 +1,127 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.header-main {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Ajusta el ancho máximo del contenedor del encabezado */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 0 20px; /* Añade espacios internos al contenedor */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 80px; /* Ajusta el tamaño máximo del logo */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  margin-right: 10px;
+}
+
+.button-container {
+  display: flex;
+}
+
+.login-button, .register-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover, .register-button:hover {
+  background-color: #135ab8;
+}
+
+h1 {
+  font-size: 24px; /* Tamaño de la fuente del título principal */
+  margin-top: 20px; /* Espacio superior del título principal */
+  margin-bottom: 20px; /* Espacio inferior del título principal */
+  text-align: center; /* Centrar el título */
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.section-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.section-content h2 {
+  color: #004080;
+}
+
+.section-content p, .section-content ul {
+  color: #555;
+}
+
+.section-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-content li {
+  margin: 10px 0;
+}
+
+.section-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-main {
+    background-color: #333;
+    color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .section {
+    display: flex;
+    align-items: center;
+  }
+
+  .section-content, .section-image {
+    flex: 1;
+  }
+
+  .section-content {
+    text-align: left;
+    padding: 40px;
+  }
+
+  .section-image {
+    margin: 0;
+  }
+}

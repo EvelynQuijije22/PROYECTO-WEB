@@ -1,0 +1,140 @@
+
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto; /* Centra horizontalmente */
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.calendar {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.day:hover {
+    background-color: #e0e0e0;
+}
+
+.button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-primary {
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.button-primary:hover {
+    background-color: #0056b3;
+}
+
+.calendar-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.calendar-day {
+    background-color: rgba(0, 115, 230, 0.1);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tutorial-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tutorial-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.tutorial-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.tutorial-materia {
+    font-weight: bold;
+}
+
+.tutorial-estado.esperando {
+    color: orange;
+}
+
+.tutorial-estado.confirmada {
+    color: green;
+}
+
+.tutorial-estado.cancelada {
+    color: red;
+}
+
+.main-cosas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-fila {
+    width: 100%;
+    max-width: 600px;
+}

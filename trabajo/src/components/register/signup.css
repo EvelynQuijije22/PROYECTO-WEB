@@ -1,0 +1,101 @@
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+#logo {
+  width: 15%;
+  height: auto;
+}
+
+#navbar_buttons {
+  display: flex;
+}
+
+
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+#signup-container-reg {
+  text-align: center;
+  margin: 50px auto; /* Puedes ajustar el margen como desees */
+  font-family: "Bahnschrift Light", sans-serif;
+  max-width: 80%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#h2 {
+  font-size: 30px;
+}
+
+.signup-form-princi {
+  text-align: left;
+  font-family: "Bahnschrift Light", sans-serif;
+}
+
+.signup-form-princi label {
+  display: block;
+  margin-bottom: 25px;
+}
+
+
+#boton {
+  background-color: #00cc33;
+  color: #fff;
+  border: none;
+  padding: 10px 20px; /* Ajusta el valor según tus preferencias */
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Bahnschrift Light", sans-serif;
+  clear: both;
+  display: block;
+  margin-top: 10px;
+  margin: 0 auto;
+}
+
+
+#boton:hover {
+  background-color: #3cff00;
+  
+}
+
+
+
+#nombre,
+#email,
+#password,
+#confirmPassword,
+#carrera,
+#tutorAsignado,
+#celular,
+#apellido,
+#contraseña,
+#confirmarContraseña {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.deshabilitado {
+  pointer-events: none;
+  color: #ccc; 
+}
+span {
+  font-size: 12px;
+}
+
+.footer-registro {
+  background-color: #333;
+  color: white;
+text-align: center;
+padding: 10px;
+}
