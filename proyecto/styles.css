@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center; /* Centra todo el texto del cuerpo */
+    text-align: center; 
 }
 
 .container {
@@ -28,7 +28,7 @@
     text-align: center;
 }
 
-/* Título llamativo */
+
 h1 {
     font-size: 2.5rem;
     color: #007bff;
@@ -36,12 +36,12 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Subtítulos centrados */
+
 h2, h3 {
     color: #2C3E50;
     font-weight: 600;
     margin-bottom: 20px;
-    text-align: center; /* Centrar subtítulos */
+    text-align: center;
 }
 
 /* Estilo de los botones */
