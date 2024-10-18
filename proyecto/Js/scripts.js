@@ -51,33 +51,31 @@ document.getElementById('signupForm')?.addEventListener('submit', function valid
  
   if (password !== confirmPassword) {
     alert("Las contraseñas no coinciden.");
-    return false; // Evitar el envío del formulario
+    return false; 
   }
 
   
 
-  // Si todo está correcto, mostrar la alerta de registro exitoso
   alert("Registro exitoso");
-  return true; // Permitir el envío del formulario
+  return true;
 });
 
-// Función para validar el formato de un correo electrónico
+
 function validarEmail(email) {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(String(email).toLowerCase());
 }
 
-// Función para validar que la contraseña cumpla los criterios: 
-// mínimo 8 caracteres, al menos una letra mayúscula, una letra minúscula, y un número.
+
 function validarContrasena(password) {
   const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
   return re.test(password);
 }
 
 
-// Validación de progreso de ejercicio
+
 document.getElementById('progresoForm')?.addEventListener('submit', function validarRegistroProgreso(event) {
-  event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
+  event.preventDefault(); 
 
   const fecha = document.getElementById('fecha').value;
   const ejercicio = document.getElementById('ejercicio').value;
@@ -87,14 +85,14 @@ document.getElementById('progresoForm')?.addEventListener('submit', function val
 
   if (!fecha || !ejercicio || !duracion || !calorias) {
     alert("Todos los campos obligatorios deben estar llenos.");
-    return false; // Evitar el envío del formulario
+    return false; 
   }
 
   alert("Progreso registrado con éxito");
-  return true; // Permitir el envío si es necesario
+  return true; 
 });
 
-// Función para validar la contraseña
+
 function validarContrasena(password) {
   const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
   return re.test(password);
