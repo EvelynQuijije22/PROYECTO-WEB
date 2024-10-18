@@ -562,7 +562,7 @@ footer .social-links img {
     margin-bottom: 15px;
 }
 
-/* Botón para guardar el progreso */
+
 .registro-progreso-contenedor button {
     width: 100%;
     padding: 10px;
@@ -578,7 +578,7 @@ footer .social-links img {
 .registro-progreso-contenedor button:hover {
     background-color: #218838;
 }
- /* Asegurar que el body ocupe toda la pantalla */
+
  html, body {
     height: 100%;
     margin: 0;
@@ -592,13 +592,13 @@ footer .social-links img {
     display: flex;
     flex-direction: column;
   }
-/* Ajusta el body para centrar el contenido */
+
 body {
-    display: flex; /* Flexbox para centrar */
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
-    background-color: #f8f9fa; /* Fondo global */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    background-color: #f8f9fa; 
 }
 main {
     flex: 1;
@@ -611,7 +611,7 @@ footer {
     margin-top: auto;
   }
 
-/* Asegura que el contenido principal (main) esté centrado */
+
 main {
     padding: 30px;
     max-width: 1200px;
@@ -619,5 +619,5 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Si hay varios elementos, apilarlos verticalmente */
+    flex-direction: column; 
 }
