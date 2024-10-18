@@ -164,7 +164,7 @@ section h2 {
   margin-bottom: 20px;
 }
 
-/* Centrar texto de bienvenida y servicios */
+
 h2.welcome, h2.services {
     text-align: center;
     margin-bottom: 25px;
@@ -179,7 +179,7 @@ p {
     line-height: 1.5;
     margin-bottom: 20px;
 }
-/* Distribución en columna para los cuadros */
+
 #servicios {
     display: flex;
     flex-direction: column;
@@ -188,7 +188,7 @@ p {
     margin: 20px;
 }
 
-/* Estilo para cada cuadro */
+
 .servicio {
     background-color: #f8f8f8;
     border-radius: 10px;
@@ -200,7 +200,7 @@ p {
     text-align: center;
 }
 
-/* Footer posicionado al final */
+
 footer {
     text-align: center;
     padding: 10px;
@@ -208,16 +208,16 @@ footer {
     position: fixed;
     bottom: 0;
 }
-/* Fondo del formulario (cuadro de iniciar sesión) */
+
 form {
     padding: 20px;
     border-radius: 10px;
     width: 300px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para mejorar la legibilidad */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añadir una sombra al cuadro */
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Estilo de los campos de entrada */
+
 input {
     width: 100%;
     padding: 10px;
@@ -226,7 +226,7 @@ input {
     border: 1px solid #ccc;
 }
 
-/* Estilo de los botones */
+
 button {
     width: 100%;
     padding: 10px;
@@ -241,12 +241,11 @@ button:hover {
     background-color: #16db33;
 }
 
-/* Centrar el formulario */
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0; /* Fondo gris claro para resaltar el formulario */
-}
+    background-color: #f0f0f0; 
