@@ -1,0 +1,526 @@
+/* Estilos generales */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #218838;
+    border-radius: 5px;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#welcome h1 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.form-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    padding: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group input:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #28a745;
+}
+
+
+/* Contenedor principal */
+#progress {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin: 5px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Título */
+#progress h2 {
+    color: #28a745;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* Lista de progreso */
+#progress ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Ítems de la lista */
+#progress ul li {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    color: #555;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Íconos */
+#progress ul li i {
+    font-size: 2em;
+    color: #28a745;
+    margin-right: 10px;
+}
+
+/* Efecto hover */
+#progress ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Texto dentro de los ítems */
+#progress ul li span {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    #progress ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #progress ul li {
+        width: 100%;
+    }
+}
+
+
+#planes {
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#planes h1 {
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.plan-list {
+    margin-top: 20px;
+}
+
+.plan-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.plan-item i {
+    color: #28a745;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.plan-item input {
+    font-size: 1.2em;
+    border: none;
+    background: none;
+    color: #333;
+    width: 100%;
+    max-width: 400px;
+}
+
+.plan-item input[readonly] {
+    background-color: transparent;
+    border: none;
+}
+
+.plan-item input:focus {
+    outline: none;
+    border-bottom: 1px solid #28a745;
+}
+
+.edit-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+    background-color: #28a745;
+}
+
+footer {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  footer nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer .social-links {
+    margin-top: 10px;
+  }
+  
+  footer .social-links a {
+    margin: 0 10px;
+  }
+  
+  .progress-container {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    background-color: #28a745;
+    width: 75%; /* Aquí ajustas el porcentaje */
+    height: 20px;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+  }
+  
+  .progress-text {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .perfil-contenedor {
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.perfil-contenedor h2 {
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.perfil-contenedor label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.perfil-contenedor input[type="text"],
+.perfil-contenedor input[type="email"] {
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.perfil-contenedor button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.perfil-contenedor button:hover {
+    background-color: #28a745;
+}
+
+.menu-nav {
+    background-color: #28a745;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-nav ul li {
+    display: inline;
+}
+
+.menu-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-nav ul li a:hover {
+    text-decoration: underline;
+}
+nav {
+    background-color: #28a745;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.registro-progreso {
+    margin-top: 60px; /* Ajusta el margen según la altura de la barra de navegación */
+}
+/* Estilo del título */
+.titulo-recomendaciones {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo de la lista */
+.lista-recomendaciones {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo de cada ítem de la lista */
+.lista-recomendaciones li {
+    background-color: #f0f8ff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    display: flex;
+    align-items: center; /* Alinear iconos y texto */
+}
+
+/* Estilo del ícono */
+.lista-recomendaciones li i {
+    margin-right: 10px; /* Espacio entre ícono y texto */
+    color: #28a745; /* Color verde para los íconos */
+    font-size: 20px;
+}
+
+/* Cambiar el color del texto al pasar el mouse */
+.lista-recomendaciones li:hover {
+    background-color: #e0f7fa;
+    cursor: pointer;
+}
+/* Estilo del mensaje motivacional */
+.mensaje-avance {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FF9800; /* Naranja vibrante */
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FFF3E0; /* Fondo ligero */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo del mensaje de recordatorio */
+.mensaje-recordatorio {
+    font-size: 20px;
+    color: #28a745; /* Verde saludable */
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #E8F5E9; /* Fondo verde suave */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo del ícono en los párrafos */
+.mensaje-avance i,
+.mensaje-recordatorio i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+footer {
+    background-color: #28a745; /* Color de fondo */
+    padding: 15px 0; /* Ajusta el padding para reducir el tamaño */
+    font-size: 17px; /* Reduce el tamaño de la fuente */
+    color: white;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px; /* Reduce el tamaño de las opciones del footer */
+}
+
+footer ul li {
+    margin: 0 10px; /* Espaciado entre los elementos */
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 5px 0; /* Reduce el espacio entre el texto */
+    font-size: 12px; /* Tamaño de texto más pequeño */
+}
+
+footer .social-links a {
+    margin: 0 10px; /* Espaciado entre iconos sociales */
+}
+
+footer .social-links img {
+    width: 15px; /* Tamaño reducido para los iconos */
+    height: auto;
+}
+

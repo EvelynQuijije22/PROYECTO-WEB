@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Planes de Entrenamiento</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="planificacion.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="perfil.html"><i class="fas fa-user"></i> Mi Perfil</a></li>
+        <li><a href="progreso personal.html"><i class="fas fa-chart-line"></i> Progreso</a></li>
+        <li><a href="plan.html"><i class="fas fa-chart-line"></i>Plan </a></li>
+        <li><a href="planes.html"><i class="fas fa-dumbbell"></i> Registra tu Entrenamiento</a></li>
+        <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="planes">
+      <section id="registro">
+        <h2>Registro de Progreso</h2>
+        <form id="progresoForm">
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" required>
+      
+          <label for="ejercicio">Tipo de Ejercicio:</label>
+          <input type="text" id="ejercicio" name="ejercicio" placeholder="Ej: Correr, Levantar Pesas" required>
+      
+          <label for="duracion">Duración (minutos):</label>
+          <input type="number" id="duracion" name="duracion" min="1" required>
+      
+          <label for="calorias">Calorías Quemadas:</label>
+          <input type="number" id="calorias" name="calorias" min="0" required>
+      
+          <label for="alimentos">Comida Consumida (opcional):</label>
+          <input type="text" id="alimentos" name="alimentos" placeholder="Ej: Ensalada, Pollo">
+      
+          <button type="submit">Guardar</button>
+        </form>
+      </section>
+      
+      <!-- Incluir el archivo de JavaScript al final para que cargue después del HTML -->
+      <script src="Js/scripts.js"></script>
+      </body>
+      </html>
+      
+        
+<script>
+    function toggleEdit(planId, btnId) {
+        var planInput = document.getElementById(planId);
+        var btn = document.getElementById(btnId);
+
+        if (planInput.hasAttribute('readonly')) {
+            // Hacer el campo editable
+            planInput.removeAttribute('readonly');
+            planInput.focus();
+            btn.textContent = 'Guardar'; // Cambiar el botón a "Guardar"
+        } else {
+            // Volver a desactivar el campo editable
+            planInput.setAttribute('readonly', true);
+            btn.textContent = 'Editar'; // Cambiar el botón a "Editar"
+        }
+    }
+</script>
+
+
+<script>
+    function enableEdit(planId) {
+        var plan = document.getElementById(planId);
+        plan.removeAttribute("readonly");
+        plan.focus();
+    }
+</script>
+  <footer>
+    <p>© 2024 Tu Plataforma de Salud. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,252 @@
+/* Agregar Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.pagina-principal {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('Imagenes/logo.png');
+    background-size: 170px 170px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center; /* Centra todo el texto del cuerpo */
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Título llamativo */
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Subtítulos centrados */
+h2, h3 {
+    color: #2C3E50;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center; /* Centrar subtítulos */
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #16db33;
+    color: white;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #16db33;
+    transform: scale(1.05);
+}
+
+/* Formularios */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+form input, button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus, button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Sección principal */
+section {
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center; /* Asegurar que todo el texto dentro de las secciones esté centrado */
+}
+
+/* Estilo del menú */
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a i {
+    margin-right: 30px;
+    color: #16db33;
+    font-size: 1.8rem;
+}
+
+.menu a:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+.menu a:hover i {
+    color: #16db33;
+     }
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  form label, form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .menu a {
+      font-size: 1.2rem;
+  }
+
+  .menu a i {
+      font-size: 1.5rem;
+  }
+}
+
+/* Centrado del título en la sección */
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Centrar texto de bienvenida y servicios */
+h2.welcome, h2.services {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+/* Distribución en columna para los cuadros */
+#servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Estilo para cada cuadro */
+.servicio {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Footer posicionado al final */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+}
+/* Fondo del formulario (cuadro de iniciar sesión) */
+form {
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para mejorar la legibilidad */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añadir una sombra al cuadro */
+}
+
+/* Estilo de los campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo de los botones */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #16db33;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #16db33;
+}
+
+/* Centrar el formulario */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Fondo gris claro para resaltar el formulario */
+}

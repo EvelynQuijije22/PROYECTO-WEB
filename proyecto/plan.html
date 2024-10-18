@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Mi Plan</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="planificacion.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="perfil.html"><i class="fas fa-user"></i> Mi Perfil</a></li>
+        <li><a href="progreso personal.html"><i class="fas fa-chart-line"></i> Progreso</a></li>
+        <li><a href="plan.html"><i class="fas fa-chart-line"></i>Plan </a></li>
+        <li><a href="planes.html"><i class="fas fa-dumbbell"></i> Registra tu Entrenamiento</a></li>
+        <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="mi-plan">
+    <h2>Mi Plan Personalizado</h2>
+
+    <h3>Metas Actuales</h3>
+    <p>Meta de calorías diarias: 2000 kcal</p>
+    <p>Meta de ejercicio diario: 45 minutos</p>
+
+    <h3>Progreso Semanal</h3>
+    <canvas id="graficoProgreso" width="800" height="150"></canvas>
+
+    <h3>Recomendaciones</h3>
+    <p>Basado en tu progreso actual, te recomendamos aumentar la duración de tu entrenamiento en 10 minutos para alcanzar tus metas más rápido.</p>
+  </section>
+
+  <script>
+    const ctx = document.getElementById('graficoProgreso').getContext('2d');
+    const graficoProgreso = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'],
+        datasets: [{
+          label: 'Minutos de Ejercicio',
+          data: [30, 45, 40, 50, 35, 55, 60],
+          backgroundColor: 'rgba(54, 162, 235, 0.6)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
