@@ -202,3 +202,64 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
     alert("Por favor completa todos los campos.");
   }
 });
+
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Evita el comportamiento predeterminado del formulario
+
+  // Validar el formulario si es necesario, o simplemente redirigir
+  const name = document.getElementById('name').value;
+  const surname = document.getElementById('surname').value;
+  const gender = document.getElementById('gender').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  // Validaciones básicas (ejemplo)
+  if (name && surname && gender && email && password) {
+    // Aquí puedes hacer la lógica del registro si tienes un backend,
+    // o simplemente redirigir después de simular un registro exitoso.
+
+    // Simulamos el registro y redirigimos al perfil
+    window.location.href = "perfil.html"; // Redirige a la página de perfil
+  } else {
+    alert("Por favor completa todos los campos.");
+  }
+});
+document.getElementById('progreso-form').addEventListener('submit', function(event) {
+  // Prevenir que el formulario se envíe
+  event.preventDefault();
+  
+  // Obtener los valores de los campos
+  const peso = parseFloat(document.getElementById('peso').value);
+  const altura = parseFloat(document.getElementById('altura').value);
+  const fecha = document.getElementById('fecha').value;
+  const notas = document.getElementById('notas').value;
+
+  // Validar el campo de peso
+  if (isNaN(peso) || peso <= 0) {
+      alert("Por favor, ingresa un peso válido mayor a 0.");
+      return; // Detener el proceso si la validación falla
+  }
+
+  // Validar el campo de altura
+  if (isNaN(altura) || altura <= 0) {
+      alert("Por favor, ingresa una altura válida mayor a 0.");
+      return;
+  }
+
+  // Validar el campo de fecha
+  if (fecha === "") {
+      alert("Por favor, selecciona una fecha.");
+      return;
+  }
+
+  // Validar el campo de notas
+  if (notas.trim() === "") {
+      alert("Por favor, ingresa alguna observación en el campo de notas.");
+      return;
+  }
+
+  // Si todas las validaciones son correctas, mostrar mensaje de éxito
+  alert("Se guardó exitosamente");
+});
+
+
