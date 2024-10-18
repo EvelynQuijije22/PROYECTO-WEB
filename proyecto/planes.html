@@ -44,9 +44,7 @@
           <button type="submit">Guardar</button>
         </form>
       </section>
-      
-      <!-- Incluir el archivo de JavaScript al final para que cargue después del HTML -->
-      <script src="Js/scripts.js"></script>
+    <script src="Js/scripts.js"></script>
       </body>
       </html>
       
@@ -57,14 +55,12 @@
         var btn = document.getElementById(btnId);
 
         if (planInput.hasAttribute('readonly')) {
-            // Hacer el campo editable
             planInput.removeAttribute('readonly');
             planInput.focus();
-            btn.textContent = 'Guardar'; // Cambiar el botón a "Guardar"
+            btn.textContent = 'Guardar'; 
         } else {
-            // Volver a desactivar el campo editable
             planInput.setAttribute('readonly', true);
-            btn.textContent = 'Editar'; // Cambiar el botón a "Editar"
+            btn.textContent = 'Editar'; 
         }
     }
 </script>
