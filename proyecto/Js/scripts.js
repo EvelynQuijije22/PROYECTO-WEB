@@ -186,38 +186,36 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
   
 
  
-    window.location.href = "perfil.html"; // Redirige a la página de perfil
+    window.location.href = "perfil.html"; 
   } else {
     alert("Por favor completa todos los campos.");
   }
 });
 
 document.getElementById('signupForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Evita el comportamiento predeterminado del formulario
+  event.preventDefault(); 
 
-  // Validar el formulario si es necesario, o simplemente redirigir
+  
   const name = document.getElementById('name').value;
   const surname = document.getElementById('surname').value;
   const gender = document.getElementById('gender').value;
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
-  // Validaciones básicas (ejemplo)
-  if (name && surname && gender && email && password) {
-    // Aquí puedes hacer la lógica del registro si tienes un backend,
-    // o simplemente redirigir después de simular un registro exitoso.
 
-    // Simulamos el registro y redirigimos al perfil
-    window.location.href = "perfil.html"; // Redirige a la página de perfil
+  if (name && surname && gender && email && password) {
+   
+
+   
+    window.location.href = "perfil.html"; 
   } else {
     alert("Por favor completa todos los campos.");
   }
 });
 document.getElementById('progreso-form').addEventListener('submit', function(event) {
-  // Prevenir que el formulario se envíe
-  event.preventDefault();
   
-  // Obtener los valores de los campos
+  event.preventDefault();
+
   const peso = parseFloat(document.getElementById('peso').value);
   const altura = parseFloat(document.getElementById('altura').value);
   const fecha = document.getElementById('fecha').value;
