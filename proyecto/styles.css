@@ -80,7 +80,7 @@ input:focus, button:focus {
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
-/* Sección principal */
+
 section {
     background-color: white;
     border-radius: 50px;
@@ -88,10 +88,10 @@ section {
     padding: 30px;
     margin: 20px auto;
     max-width: 600px;
-    text-align: center; /* Asegurar que todo el texto dentro de las secciones esté centrado */
+    text-align: center; 
 }
 
-/* Estilo del menú */
+
 .menu {
     list-style: none;
     padding: 0;
@@ -126,7 +126,7 @@ section {
     color: #16db33;
      }
 
-/* Responsividad para pantallas pequeñas */
+
 @media (max-width: 768px) {
   body {
     padding: 20px;
@@ -158,7 +158,7 @@ section {
   }
 }
 
-/* Centrado del título en la sección */
+
 section h2 {
   text-align: center;
   margin-bottom: 20px;
