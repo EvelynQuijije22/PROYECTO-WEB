@@ -29,17 +29,16 @@
     </form>
   </section>
 
-  <script>
+   <script>
     document.getElementById('signupForm').addEventListener('submit', function(event) {
-      event.preventDefault();  // Evitar que el formulario recargue la página
-
-      // Guardar los datos en localStorage
+      event.preventDefault();  
+    
       localStorage.setItem('name', document.getElementById('name').value);
       localStorage.setItem('surname', document.getElementById('surname').value);
       localStorage.setItem('gender', document.getElementById('gender').value);
       localStorage.setItem('email', document.getElementById('email').value);
 
-      // Redirigir a la página de perfil
+  
       window.location.href = "planificacion.html";
     });
   </script>
