@@ -127,7 +127,7 @@ button:hover {
     gap: 30px;
 }
 
-/* Ítems de la lista */
+
 #progress ul li {
     background-color: #f0f8ff;
     padding: 20px;
@@ -413,14 +413,13 @@ li a {
     font-family: 'Arial', sans-serif;
 }
 
-/* Estilo de la lista */
+
 .lista-recomendaciones {
     list-style-type: none;
     padding-left: 0;
     font-family: 'Arial', sans-serif;
 }
 
-/* Estilo de cada ítem de la lista */
 .lista-recomendaciones li {
     background-color: #f0f8ff;
     padding: 10px;
@@ -429,46 +428,46 @@ li a {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 18px;
     display: flex;
-    align-items: center; /* Alinear iconos y texto */
+    align-items: center; 
 }
 
-/* Estilo del ícono */
+
 .lista-recomendaciones li i {
-    margin-right: 10px; /* Espacio entre ícono y texto */
-    color: #28a745; /* Color verde para los íconos */
+    margin-right: 10px; 
+    color: #28a745; 
     font-size: 20px;
 }
 
-/* Cambiar el color del texto al pasar el mouse */
+
 .lista-recomendaciones li:hover {
     background-color: #e0f7fa;
     cursor: pointer;
 }
-/* Estilo del mensaje motivacional */
+
 .mensaje-avance {
     font-size: 22px;
     font-weight: bold;
-    color: #FF9800; /* Naranja vibrante */
+    color: #FF9800;
     text-align: center;
     margin: 20px 0;
     font-family: 'Times New Roman', Times, serif;
-    background-color: #FFF3E0; /* Fondo ligero */
+    background-color: #FFF3E0; 
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Estilo del mensaje de recordatorio */
+
 .mensaje-recordatorio {
     font-size: 20px;
-    color: #28a745; /* Verde saludable */
+    color: #28a745; 
     text-align: center;
     margin: 20px 0;
     font-family: 'Times New Roman', Times, serif;
-    background-color: #E8F5E9; /* Fondo verde suave */
+    background-color: #E8F5E9; 
     padding: 15px;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
@@ -477,16 +476,15 @@ li a {
     justify-content: center;
 }
 
-/* Estilo del ícono en los párrafos */
 .mensaje-avance i,
 .mensaje-recordatorio i {
     margin-right: 10px;
     font-size: 24px;
 }
 footer {
-    background-color: #28a745; /* Color de fondo */
-    padding: 15px 0; /* Ajusta el padding para reducir el tamaño */
-    font-size: 17px; /* Reduce el tamaño de la fuente */
+    background-color: #28a745; 
+    padding: 15px 0; 
+    font-size: 17px; 
     color: white;
     text-align: center;
 }
@@ -497,11 +495,11 @@ footer ul {
     margin: 0 0 10px 0;
     display: flex;
     justify-content: space-around;
-    font-size: 15px; /* Reduce el tamaño de las opciones del footer */
+    font-size: 15px;
 }
 
 footer ul li {
-    margin: 0 10px; /* Espaciado entre los elementos */
+    margin: 0 10px; 
 }
 
 footer ul li a {
@@ -510,16 +508,16 @@ footer ul li a {
 }
 
 footer p {
-    margin: 5px 0; /* Reduce el espacio entre el texto */
-    font-size: 12px; /* Tamaño de texto más pequeño */
+    margin: 5px 0; 
+    font-size: 12px; 
 }
 
 footer .social-links a {
-    margin: 0 10px; /* Espaciado entre iconos sociales */
+    margin: 0 10px; 
 }
 
 footer .social-links img {
-    width: 15px; /* Tamaño reducido para los iconos */
+    width: 15px; 
     height: auto;
 }
 
