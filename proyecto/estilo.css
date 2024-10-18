@@ -524,3 +524,101 @@ footer .social-links img {
     height: auto;
 }
 
+/* Contenedor principal del registro de progreso */
+.registro-progreso-contenedor {
+    margin: 0 auto;
+    padding: 60px;
+    width: 80%;
+    max-width: 600px; /* Ajustamos el tamaño máximo */
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px; /* Añadimos un margen superior */
+}
+
+/* Título del registro de progreso */
+.registro-progreso-contenedor h2 {
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Campos de entrada del registro de progreso */
+.registro-progreso-contenedor label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.registro-progreso-contenedor input[type="number"],
+.registro-progreso-contenedor input[type="text"],
+.registro-progreso-contenedor input[type="date"] {
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+/* Botón para guardar el progreso */
+.registro-progreso-contenedor button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.registro-progreso-contenedor button:hover {
+    background-color: #218838;
+}
+ /* Asegurar que el body ocupe toda la pantalla */
+ html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column
+    ;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+/* Ajusta el body para centrar el contenido */
+body {
+    display: flex; /* Flexbox para centrar */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+    background-color: #f8f9fa; /* Fondo global */
+}
+main {
+    flex: 1;
+  }
+footer {
+    background-color: #28a745;
+    text-align: abajo;
+    padding: 10px;
+    font-size: 140px;
+    margin-top: auto;
+  }
+
+/* Asegura que el contenido principal (main) esté centrado */
+main {
+    padding: 30px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Si hay varios elementos, apilarlos verticalmente */
+}
