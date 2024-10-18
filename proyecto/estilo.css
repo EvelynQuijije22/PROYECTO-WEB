@@ -142,27 +142,27 @@ button:hover {
     justify-content: center;
 }
 
-/* Íconos */
+
 #progress ul li i {
     font-size: 2em;
     color: #28a745;
     margin-right: 10px;
 }
 
-/* Efecto hover */
+
 #progress ul li:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Texto dentro de los ítems */
+
 #progress ul li span {
     font-size: 1.1em;
     font-weight: 600;
     color: #333;
 }
 
-/* Ajustes para pantallas pequeñas */
+
 @media (max-width: 768px) {
     #progress ul {
         flex-direction: column;
@@ -289,7 +289,7 @@ footer {
   
   .progress-bar {
     background-color: #28a745;
-    width: 75%; /* Aquí ajustas el porcentaje */
+    width: 75%; 
     height: 20px;
     border-radius: 5px;
     transition: width 0.5s ease;
@@ -401,9 +401,9 @@ li a {
 }
 
 .registro-progreso {
-    margin-top: 60px; /* Ajusta el margen según la altura de la barra de navegación */
+    margin-top: 60px; 
 }
-/* Estilo del título */
+
 .titulo-recomendaciones {
     font-size: 24px;
     font-weight: bold;
