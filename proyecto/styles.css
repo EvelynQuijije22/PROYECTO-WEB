@@ -1,4 +1,4 @@
-/* Agregar Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 .pagina-principal {
@@ -44,7 +44,7 @@ h2, h3 {
     text-align: center;
 }
 
-/* Estilo de los botones */
+
 button {
     background-color: #16db33;
     color: white;
@@ -61,7 +61,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Formularios */
+
 form {
     display: grid;
     gap: 15px;
