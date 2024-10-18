@@ -51,20 +51,15 @@
       </form>
   </div>
   
-  <script>
-    // Cargar los datos del localStorage al cargar la página
+   <script>
     document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('name').value = localStorage.getItem('name');
       document.getElementById('surname').value = localStorage.getItem('surname');
       document.getElementById('gender').value = localStorage.getItem('gender');
       document.getElementById('email').value = localStorage.getItem('email');
     });
-
-    // Guardar los datos actualizados
     document.getElementById('profileForm').addEventListener('submit', function(event) {
       event.preventDefault();
-
-      // Actualizar localStorage con los nuevos valores
       localStorage.setItem('name', document.getElementById('name').value);
       localStorage.setItem('surname', document.getElementById('surname').value);
       localStorage.setItem('gender', document.getElementById('gender').value);
