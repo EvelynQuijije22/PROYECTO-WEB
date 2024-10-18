@@ -223,31 +223,29 @@ document.getElementById('progreso-form').addEventListener('submit', function(eve
   const fecha = document.getElementById('fecha').value;
   const notas = document.getElementById('notas').value;
 
-  // Validar el campo de peso
+  
   if (isNaN(peso) || peso <= 0) {
       alert("Por favor, ingresa un peso válido mayor a 0.");
-      return; // Detener el proceso si la validación falla
+      return; 
   }
 
-  // Validar el campo de altura
   if (isNaN(altura) || altura <= 0) {
       alert("Por favor, ingresa una altura válida mayor a 0.");
       return;
   }
 
-  // Validar el campo de fecha
+
   if (fecha === "") {
       alert("Por favor, selecciona una fecha.");
       return;
   }
 
-  // Validar el campo de notas
   if (notas.trim() === "") {
       alert("Por favor, ingresa alguna observación en el campo de notas.");
       return;
   }
 
-  // Si todas las validaciones son correctas, mostrar mensaje de éxito
+
   alert("Se guardó exitosamente");
 });
 
