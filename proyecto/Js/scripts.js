@@ -112,23 +112,22 @@ loginForm.addEventListener("submit", function(e) {
   }
 });
 document.getElementById("signupForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Evitar que el formulario se envíe normalmente
+  event.preventDefault(); 
 
 
 
-  // Obtener los valores de los campos
   const firstName = document.getElementById("firstName").value;
   const lastName = document.getElementById("lastName").value;
   const gender = document.getElementById("gender").value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-  // Guardar los datos en localStorage
+
   localStorage.setItem("firstName", firstName);
   localStorage.setItem("lastName", lastName);
   localStorage.setItem("gender", gender);
   localStorage.setItem("email", email);
-  localStorage.setItem("password", password); // No es recomendable almacenar contraseñas de esta forma
+  localStorage.setItem("password", password); 
 
   // Redirigir a la página del perfil
   window.location.href = 'profile.html'; // Asegúrate de que este sea el nombre correcto de tu archivo de perfil
