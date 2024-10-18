@@ -102,7 +102,6 @@ loginForm.addEventListener("submit", function(e) {
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("loginPassword").value;
 
-  // Validar login y redirigir
   if (email === "admin@test.com" && password === "admin") {
       window.location.href = "./Html/Admin/login.html";
   } else if (email === "user@test.com" && password === "user") {
@@ -129,36 +128,34 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
   localStorage.setItem("email", email);
   localStorage.setItem("password", password); 
 
-  // Redirigir a la página del perfil
-  window.location.href = 'profile.html'; // Asegúrate de que este sea el nombre correcto de tu archivo de perfil
+
+  window.location.href = 'profile.html'; 
 });
 console.log("Formulario enviado, redirigiendo a perfil...");
 window.location.href = 'profile.html'; 
-// Manejar el evento de envío del formulario de registro
-document.getElementById("signupForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Evita que el formulario se envíe normalmente
 
-  // Obtener los valores de los campos de registro
+document.getElementById("signupForm").addEventListener("submit", function(event) {
+  event.preventDefault(); 
+
+  
   const name = document.getElementById("name").value;
   const surname = document.getElementById("surname").value;
   const gender = document.getElementById("gender").value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-  // Guardar los valores en el localStorage
+ 
   localStorage.setItem("name", name);
   localStorage.setItem("surname", surname);
   localStorage.setItem("gender", gender);
   localStorage.setItem("email", email);
   localStorage.setItem("password", password);
 
-  // Redirigir a la página del perfil después del registro
+ 
   window.location.href = 'profile.html';
 });
-// Manejar el evento de envío del formulario de inicio de sesión
 document.getElementById("loginForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Evita que el formulario se envíe normalmente
-
+  event.preventDefault(); 
   // Obtener los valores de los campos de inicio de sesión
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
