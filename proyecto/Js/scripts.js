@@ -156,40 +156,36 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
 });
 document.getElementById("loginForm").addEventListener("submit", function(event) {
   event.preventDefault(); 
-  // Obtener los valores de los campos de inicio de sesión
+  
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-  // Obtener los datos almacenados en localStorage
+  
   const storedEmail = localStorage.getItem("email");
   const storedPassword = localStorage.getItem("password");
 
-  // Validar las credenciales
   if (email === storedEmail && password === storedPassword) {
-      // Si las credenciales coinciden, redirigir a la página del perfil
+      
       window.location.href = 'profile.html';
   } else {
-      // Si no coinciden, mostrar un mensaje de error
+      
       alert("Email o contraseña incorrectos. Inténtalo de nuevo.");
   }
 });
 
 document.getElementById('signupForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Evita el comportamiento predeterminado del formulario
+  event.preventDefault(); 
 
-  // Validar el formulario si es necesario, o simplemente redirigir
   const name = document.getElementById('name').value;
   const surname = document.getElementById('surname').value;
   const gender = document.getElementById('gender').value;
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
-  // Validaciones básicas (ejemplo)
   if (name && surname && gender && email && password) {
-    // Aquí puedes hacer la lógica del registro si tienes un backend,
-    // o simplemente redirigir después de simular un registro exitoso.
+  
 
-    // Simulamos el registro y redirigimos al perfil
+ 
     window.location.href = "perfil.html"; // Redirige a la página de perfil
   } else {
     alert("Por favor completa todos los campos.");
